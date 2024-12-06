@@ -1,1 +1,9 @@
 # GrowVest
+
+Nous avons développé une application interactive avec Dash pour analyser et visualiser les données boursières d'un ensemble de tickers, incluant des actions et le Bitcoin (BTC-USD). Cette application récupère les données historiques du marché à l'aide de l'API yfinance et calcule plusieurs indicateurs techniques, tels que le RSI (Relative Strength Index), le MACD (Moving Average Convergence Divergence), ainsi que les moyennes mobiles simples (SMA) et exponentielles (EMA). Ces indicateurs ont été sélectionnés pour leur capacité à identifier les tendances du marché, repérer les situations de surachat ou survente, et suivre l'évolution des prix. Lorsque le MACD est moins fiable, notamment sur des périodes d’analyse courtes, nous nous appuyons sur le RSI et les moyennes mobiles pour affiner l’interprétation.
+
+Nous avons également intégré un modèle de prévision basé sur Prophet pour estimer les prix futurs des titres. Cependant, après des tests approfondis, nous avons constaté que ses prédictions manquaient de fiabilité dans le contexte de notre application. En conséquence, nous avons choisi de mettre cette fonctionnalité de côté pour l’instant.
+
+L’interface utilisateur offre une expérience conviviale, permettant à l'utilisateur de sélectionner un ticker via un menu déroulant. Cette sélection met automatiquement à jour quatre graphiques interactifs : un graphique des cours de l'action avec les moyennes mobiles, un graphique du RSI, un graphique du MACD, et un graphique des prédictions de prix futurs.
+
+Globalement, nous avons adopté une approche prudente en minimisant les risques dans notre analyse des actions. Les indicateurs utilisés ont été choisis pour leur robustesse et leur capacité à fournir des informations fiables sur les tendances du marché, permettant une prise de décision éclairée tout en réduisant l'exposition à des fluctuations imprévues.
